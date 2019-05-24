@@ -21,5 +21,20 @@
         <div class="title">CUBETHON</div>
       </div>
     </div>
+    
+    <script> 
+var change = false;
+
+window.onbeforeunload = function() {
+    if (change){
+        return "Sure you want to leave?";
+    }
+};
+window.onload = function() {
+    change = true;
+}
+</script>
+    
+    
   </body>
 </html>
